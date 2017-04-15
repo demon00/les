@@ -413,7 +413,7 @@ th {
 }
 .mobile .container {
   max-width: 480px;
-  padding: 0 20px;
+  padding: 4px 20px;
   display: block;
 }
 .mobile #header > .container,
@@ -1119,7 +1119,7 @@ th {
 
   .container__conten {
     width: 100% !important;
-    max-width: 480px;
+    max-width: none;
   }
 
   .mobile .top-block{
@@ -1139,11 +1139,18 @@ th {
   .about__school_caption {
     margin-left: 0;
     font-size: 36px;
-    line-height: 30px;
+    line-height: 32px;
+    margin-bottom: 18px;
+    margin-top: 18px;
   }
 
   .about__school_area {
     font-size: 46px !important;
+  }
+
+  .about__school_area-sup {
+    font-size: 0.5em;
+    margin-top: -9px;
   }
 
   .about__school {
@@ -1170,7 +1177,8 @@ th {
   }
 
   .about__school_contact-two {
-    width: 375px;
+    width: 100%;
+    max-width: 375px;
   }
 
   .about__school_contact-phone br{
@@ -1178,11 +1186,13 @@ th {
   }
 
   .school_image-one {
-    width: 100%;
+    width: 105%;
     margin-top: 89px;
-    height: 313px;
+    height: 326px;
     float: none;
-    background-position: -70px 0;
+    background-position: -88px 0;
+    -webkit-background-size: contain;
+    background-size: contain;
   }
 
   .school_image-two {
@@ -1195,7 +1205,7 @@ th {
 
   .about__school_par {
     width: 395px;
-    padding-top: 16px;
+    padding-top: 0;
   }
 
   .about__school_par-tow {
@@ -1226,8 +1236,8 @@ th {
   .about__school_child-par {
     position: absolute;
     top: 460px;
-    width: 380px;
-    margin-top: -54px;
+    width: 79%;
+    margin-top: -56px;
   }
 
   .child-par_two {
@@ -1281,9 +1291,9 @@ th {
   }
 
   .timbilding__cost_small {
-    margin-top: 44px;
+    margin-top: 43px;
     display: block;
-    width: 138px;
+    width: 142px;
     height: 25px;
     background-color: #ff6600;
     color: #fff;
@@ -1299,15 +1309,15 @@ th {
     width: 0;
     height: 0;
     border-top: 12px solid transparent;
-    border-left: 11px solid #ff6600;
+    border-left: 9px solid #ff6600;
     border-bottom: 12px solid transparent;
-    right: -11px;
+    right: -9px;
     bottom: 0;
     position: absolute;
   }
 
   .timbilding__right_text {
-    margin-top: 10px;
+    margin-top: 12px;
     width: 71%;
     padding-bottom: 0;
   }
@@ -1324,7 +1334,7 @@ th {
   .partners {
     display: block;
     width: 100%;
-    min-width: 480px;
+    max-width: 480px;
     overflow: hidden;
     margin-top: 40px;
   }
@@ -1338,12 +1348,13 @@ th {
   .partners__item_link {
     width: 115px;
     height: 115px;
+    margin-right: 5%;
   }
 
   .partners__wrap {
-    min-width: 480px;
-    height: 0;
-    width: 0;
+    max-width: 480px;
+    height: auto;
+
   }
 
   .teachers {
@@ -1360,7 +1371,7 @@ th {
   }
 
   .teachers__container {
-    width: 1536px;
+    width: 1520px;
     display: block;
     transition: all .5s ease;
     position: relative;
@@ -1370,11 +1381,11 @@ th {
   .carousel{
     position: absolute;
     z-index: 3;
-    width: 370px;
+    width: 84%;
     height: 250px;
-    left: -22%;
-    border-right: 140px solid #fff;
-    border-left: 140px solid #fff;
+    left: -20px;
+    border-right: 40px solid #fff;
+    border-left: 40px solid #fff;
   }
 
   .teacher__wrapp {
@@ -1392,12 +1403,12 @@ th {
 
   .arrow-left {
     background: url("../images/car-nav-prev.png") no-repeat 0 0;
-    left: -45px;
+    left: -27px;
   }
 
   .arrow-right {
     background: url("../images/car-nav-next.png") no-repeat 0 0;
-    left: 388px;
+    left: 101%;
   }
 
   .arrow-active {
@@ -1489,7 +1500,7 @@ th {
     margin-right: 21px;
   }
   .mobile #header p span {
-    margin-right: 0;
+    margin-right: 20px;
     font-size: 16px;
   }
   .mobile .child-cources span {
@@ -1596,55 +1607,76 @@ th {
     margin-bottom: 0;
   }
 
-  .timbilding__small_img {
-    width: 85%;
+  .about__school_par {
+    width: 80%;
   }
 
-  .school_image-one {
-    width: 90%;
-    -webkit-background-size: cover;
-    background-size: cover;
-  }
-
-  .teachers__container {
-    left: 20px;
-  }
-
-  .carousel {
-    border-left: 120px solid #fff;
-    border-right: 120px solid #fff;
-  }
-
-  .arrow-right {
-    left: 370px;
-  }
-
-  .arrow-left {
-    left: -28px;
-  }
-
-}
-
-@media (max-width: 440px) {
-
-  .carousel {
-    width: 360px;
-    border-left: 110px solid #fff;
-    border-right: 110px solid #fff;
+  .child-par_two {
+    top: 570px;
   }
 
   .teachers__container {
-    left: 15px;
+    left: 25%;
   }
 
-  .arrow-right {
-    left: 360px;
+  .carousel {
+    width: 48%;
+    left: -58px;
+    border-right: 140px solid #fff;
+    border-left: 140px solid #fff;
   }
 
 }
 
 @media (max-width: 420px) {
+  .about__school_area-wrap {
+    top: 305px;
+  }
 
+  .about__school_par {
+    margin-top: -20px;
+  }
+
+  .timbilding__small_img {
+    width: 90%;
+  }
+
+  .partners__item_link {
+    margin-right: 4%;
+  }
+
+  .carousel {
+    width: 50%;
+    left: -60px;
+  }
+
+}
+
+@media (max-width: 380px) {
+
+  .about__school_area-wrap {
+    top: 350px;
+  }
+
+  .school_image-one {
+    width: 113%;
+  }
+
+  .about__school_par {
+    margin-top: -46px;
+  }
+
+  .timbilding__cost_small {
+    margin-top: 0;
+  }
+
+  .partners__school-captions {
+    width: 230px;
+  }
+
+  .child-par_two {
+    top: 580px;
+  }
 
 }
 
@@ -1675,6 +1707,36 @@ th {
 
   .mobile .logo {
     margin-bottom: 12px;
+  }
+
+  .about__school_caption {
+    font-size: 30px;
+    line-height: 28px;
+  }
+
+  .about__school_par {
+    margin-top: -77px;
+  }
+
+  .child_image-one {
+    width: 88%;
+  }
+
+  .about__school_child-par {
+    margin-top: -79px;
+  }
+
+  .timbilding__small_img {
+    width: 87%;
+  }
+
+  .carousel {
+    width: 60%;
+    left: -95px;
+  }
+
+  .teachers__container {
+    left: 20%;
   }
 
 }
@@ -1723,12 +1785,142 @@ th {
     margin-left: -15px;
   }
 
+  .about__school_caption {
+    font-size: 36px;
+    line-height: 32px;
+    width: 78%;
+  }
+
+  .about__school_area-wrap {
+    top: 397px;
+  }
+
+  .about__school_area-desc {
+    letter-spacing: 0.03em;
+  }
+
+  .school_image-one {
+    width: 83%;
+    margin-top: 79px;
+    height: 294px;
+    background-position: -223px 0;
+    -webkit-background-size: contain;
+    background-size: 196%;
+  }
+
+  .about__school_par {
+    margin-top: 13px;
+  }
+
+  .about__school_child {
+    padding-top: 36px;
+  }
+
+  .child_image-one {
+    width: 83%;
+    -webkit-background-size: 123%;
+    background-size: 123%;
+  }
+
+  .about__school_child-par {
+    margin-top: -69px;
+  }
+
+  .child-par_two {
+    top: 598px;
+  }
+
+  .timbilding__right {
+    margin-top: 20px;
+  }
+
+  .timbilding__right_caption {
+    line-height: 24px;
+    width: 30%;
+    padding-bottom: 8px;
+  }
+
+  .timbilding__small_img {
+    background-position: 0 0;
+    -webkit-background-size: 157%;
+    background-size: 157%;
+    height: 312px;
+  }
+
+  .timbilding__cost_small {
+    margin-top: 17px;
+  }
+
+  .timbilding__right_text {
+    margin-top: 9px;
+    width: 84%;
+  }
+
+  .timbilding__text_par-two {
+    margin-top: 0;
+  }
+
+  .partners {
+    margin-top: 32px;
+  }
+
+  .partners__school-captions {
+    margin-bottom: -5px;
+  }
+
+  .teachers {
+    margin-top: 10px;
+    margin-bottom: 31px;
+  }
+
+  .teachers__caption {
+    font-size: 25px;
+  }
+
+  .arrow-right {
+    left: 106%;
+  }
+
 }
 
 @media (max-width: 306px) {
 
   .menu-button {
     padding-bottom: 24px
+  }
+
+  .school_image-one {
+    width: 88%;
+  }
+
+  .about__school_par {
+    width: 87%;
+  }
+
+  .child_image-one {
+    width: 88%;
+  }
+
+  .about__school_child-par {
+    width: 87%;
+  }
+
+  .child-par_two {
+    top: 587px;
+  }
+
+  .timbilding__small_img {
+    -webkit-background-size: 163%;
+    background-size: 163%;
+  }
+
+  .carousel {
+    width: 72%;
+    left: -121px;
+  }
+
+  .teachers__container {
+    left: 17%;
   }
 
 }

@@ -399,6 +399,7 @@ let teacherWrapp = teachers.querySelectorAll('.teacher__wrapp');
   let count = 2;
   let position = 0;
 
+  if(window.innerWidth <= 460) count = 1;
 
    arrowLeft.addEventListener('click', () => {
     position = Math.min(position + width * count, 0);
